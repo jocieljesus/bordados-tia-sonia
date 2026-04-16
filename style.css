@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-:root{
+:root {
     --cor-principal: #3B929C;
     --cor-secundaria: #FFFFFF;
-    --cor-botao:#E78887;
-    --largura-principal: 1600px;
+    --cor-botao: #E78887;
+    --largura-principal: 84vw;
+    --largura-celular: 100vw;
 }
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans';
 }
 
-#home{
+#home {
     scroll-margin-top: 110px;
 }
-#bordados{
+
+#bordados {
     scroll-margin-top: 140px;
 }
 
 header {
-    background-color:var(--cor-principal);
+    background-color: var(--cor-principal);
     width: 100%;
     height: 110px;
     position: fixed;
@@ -30,7 +31,7 @@ header {
 }
 
 
-nav{
+.area-navegacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,47 +40,42 @@ nav{
     margin: auto;
 }
 
-ul{
+ul {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-.icones{
+.icones {
     text-decoration: none;
     color: var(--cor-secundaria);
     font-size: 25px;
     border: 2px solid var(--cor-secundaria);
-    padding: 0px;
     border-radius: 0 20px;
+    padding: 10px 50px;
 }
 
-.icones:hover{
+.icones:hover {
     background-color: var(--cor-botao);
     color: var(--cor-secundaria);
     border: none;
 }
 
-a:focus{
+.icones:focus {
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
 }
 
-.icones{
-    padding: 10px 50px; 
-}
-
-
-main{
+main {
     margin-top: 110px;
 }
 
 
-#banner{
+#banner {
     width: var(--largura-principal);
 }
 
-#banner__image{
+#banner__image {
     margin-top: 10px;
     width: var(--largura-principal);
 }
@@ -94,13 +90,13 @@ main{
     margin-top: 10px;
 }
 
-.area-banner{
+.area-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#reservas__botao{
+#reservas__botao {
     padding: 20px 60px;
     color: var(--cor-secundaria);
     font-size: 22px;
@@ -110,54 +106,56 @@ main{
     margin-top: 15px;
 }
 
-#reservas__botao:hover{
+#reservas__botao:hover {
     background-color: var(--cor-botao);
     color: var(--cor-secundaria);
 }
 
-#reservas__titulo{
+#reservas__titulo {
     margin-top: 15px;
 
 }
 
-.area-sobre{
+.area-sobre {
     display: flex;
     width: var(--largura-principal);
-    margin:40px auto;
+    margin: 40px auto;
     justify-content: space-around;
 }
 
-.sobre{
+.sobre {
     color: var(--cor-principal);
     width: 500px;
 }
 
-.sobre__foto{
+.sobre__foto {
     width: 500px;
 }
-.sobre__titulo{
+
+.sobre__titulo {
     margin-top: 30px;
     font-size: 50px;
 }
- .sobre__texto{
+
+.sobre__texto {
     margin-top: 30px;
     font-size: 30px;
- }
+}
 
- .area-busca{
+.area-busca {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
 
- .catalogo-titulo{
+.catalogo-titulo {
     font-size: 50px;
-    color:var(--cor-principal);
+    color: var(--cor-principal);
     margin-bottom: 50px;
- }
+}
 
- .busca{
+.busca {
     display: flex;
     width: 764px;
     height: 40px;
@@ -165,48 +163,168 @@ main{
     border-radius: 20px;
     padding: 5px;
     justify-content: center;
- }
- .busca__campo{
-    flex: 1 ;
+}
+
+.busca__campo {
+    flex: 1;
     border: none;
     outline: none;
     font-size: 25px;
- }
+}
 
- .busca__botao{
+.busca__botao {
     font-size: 30px;
     border: none;
     color: var(--cor-principal);
     background: none;
- }
+}
 
- .bordados > a > img{
+.bordados>a>img {
     width: 400px;
     border-radius: 20px;
- }
+}
 
- .bordados{
+.bordados {
     text-align: center;
- }
+}
 
- .catalogo{
-    margin: 100px  auto;
+.catalogo {
+    margin: 100px auto;
     width: var(--largura-principal);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 50px;
+    gap: 10px;
+}
 
- }
-
- h3{
+h3 {
     color: var(--cor-principal);
- }
- 
- hr{
-    border:none;
+}
+
+hr {
+    border: none;
     height: 2px;
     background-color: var(--cor-principal);
     width: var(--largura-principal);
     margin: auto;
+}
+
+
+@media (max-width: 430px) {
+
+    header {
+        width: var(--largura-celular);
+        height:10vh;
+        position: fixed;
+        top: 0;
+    }
+
+    .area-navegacao {
+        width: var(--largura-celular);
+        height:10vh;
+        justify-content: center;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    ul{
+        gap: 15px;
+    }
+
+    .icones{
+        font-size: 30px;
+        border: none;
+        padding: 20px;
+    }
+    .icones:hover{
+        background-color: initial;
+        border: initial;
+    }
+
+    .icones :focus{
+        border-radius: 0;
+        border: initial;
+    }
+
+    .icones:active{
+        border: initial;
+    }
+
+    #banner{
+        width: var(--largura-celular);
+    }
+
+    #banner__image{
+        width: var(--largura-celular);
+    }
+
+    #reservas{
+        width: 390px;
+        border-width: 2px;
+    }
+
+    #reservas__titulo{
+        font-size: 22px;
+    }
+
+    #reservas__botao{
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .area-sobre{
+        flex-direction: column;
+        width: var(--largura-celular);
+    }
+    .sobre{
+        width: var(--largura-celular);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre__titulo{
+        font-size: 35px;
+    }
+
+    .sobre__texto{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .sobre__foto{
+        width: 400px;
+        border-radius: 100px;
+    }
+    hr{
+        width: 400px;
+    }
+    .area-busca{
+        width: var(--largura-celular);
+    }
+
+    .busca{
+        width: 350px;
+    }
+
+    .catalogo-titulo{
+        font-size: 35px;
+    }
+
+    .catalogo{
+        width: var(--largura-celular);
+        align-content: space-evenly;
+        height: 65vh;
+    }
+ 
+  
+    .bordados >a > img {
+        width: 200px;
+    }
+
+
+    main{ 
+        margin-top: 80px;
+    }
 }
