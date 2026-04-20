@@ -1,0 +1,153 @@
+@import url(style.css);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background-image: url(img/logo-tia-sonia.png);
+    background-repeat: no-repeat;
+    background-position: 0% 28%;
+    background-size: 100%;
+  }
+
+.area-login{
+    background-position: 0% 18%; 
+    background-size:100%;
+}
+
+
+.area-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80vw;
+    
+}
+
+
+
+
+.area-cadastro {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 50vw;
+    margin:auto;
+    border-radius: 50px  2px;
+    padding: 40px;
+    font-size: 1.5rem;
+    background-color: rgba(236, 232, 221, 0.9);
+}
+
+div{
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+
+
+ .label-input input, .label-input select,   button {
+    padding: 15px 5px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 5px;
+    font-size: 1.5rem; 
+    background-color: #f5f3eb;
+    width: 300px;
+  }
+
+.area-button{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.area-acesso{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.area-acesso input{
+  width: 630px;
+}
+
+
+#ddd{
+  width: 80px;
+}
+#telefone{
+  width: 515px;
+}
+
+.data-nascimento{
+  padding: 0;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.genero{
+  width: 300px;
+  margin-top: 20px;
+}
+
+.ddd > input{
+  width: 50px;
+}
+
+
+.area-dados{
+  display: flex;
+  gap: 30px;
+}
+button{
+  padding: 15px 100px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
+}
+
+  .area-titulo{
+    margin-bottom: 30px;
+  }
+
+.link-conta{
+  color: var(--cor-principal);
+}
+
+
+.link-conta:hover{
+  color: var(--cor-botao);
+}
+
+
+#btn-login {
+  padding: 0;
+}
+
+.area-button > button:hover{
+  background-color: var(--cor-botao);
+  border: none;
+}
+
+#btn-login > a{
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  width: 100%;
+  display: block;
+  height: 100%;
+  padding: 15px 0;
+}
