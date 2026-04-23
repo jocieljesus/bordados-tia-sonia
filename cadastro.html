@@ -17,7 +17,7 @@
         <section class="area-formulario">
             <form action="#" class="form-cadastro">
 
-                <div class="area-nome">
+                <div class="area-nome formatacao">
                     <div class="primeiro-nome">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" placeholder="Digite seu nome" required>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <div class="area-acesso">
+                <div class="area-acesso formatacao">
                     <div class="email">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Digite seu email" required>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="area-contato">
+                <div class="area-contato formatacao">
                     <div class="ddd">
                         <label for="ddd">ddd</label>
                         <input type="number" max="99" id="ddd" placeholder="ddd" required>
@@ -49,25 +49,30 @@
                         <input type="text" id="telefone" placeholder="Digite seu telefone" required>
                     </div>
                 </div>
-                <div class="area-endereco">
-                    <div class="endereco">
-                        <label for="endereco"></label>
-                        <input type="text" id="endereco" placeholder="Digite seu endereço">
+                <div class="area-endereco formatacao">
+                    <div class="endereco-numero">
+                        <div class="endereco">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" placeholder="Digite seu endereço">
+                        </div>
+                        <div class="numero">
+                            <label for="numero">Número</label>
+                            <input type="number" id="numero" placeholder="000">
+                        </div>
                     </div>
-                    <div class="numero">
-                        <label for="numero">Número</label>
-                        <input type="number" id="numero" placeholder="000">
+                    <div class="cidade-cep">
+                        <div class="cidade">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" placeholder="cidade">
+                        </div>
+                        <div class="cep">
+                            <label for="cep"> Cep </label>
+                            <input type="text" id="cep" placeholder="00000-000">
+                        </div>
                     </div>
-                    <div class="cidade">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" placeholder="cidade">
-                    </div>
-                    <div class="cep">
-                        <label for="cep"> Cep </label>
-                        <input type="text" id="cep" placeholder="00000-000">
-                    </div>
+
                 </div>
-                <div class="area-dados">
+                <div class="area-dados formatacao">
                     <div class="data-nascimento">
                         <label for="data-nascimento"> Data de Nascimento</label>
                         <input type="date" id="data-nascimento" required>

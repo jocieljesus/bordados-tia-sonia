@@ -1,0 +1,131 @@
+
+
+/* Importando uma fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.area-cadastro {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.area-titulo h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Organização dos campos em linha */
+.formatacao {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Garante que quebre em telas pequenas */
+}
+
+.formatacao > div {
+    flex: 1; /* Faz os campos dividirem o espaço igualmente */
+    min-width: 200px; /* Evita que fiquem muito espremidos */
+}
+
+/* Ajustes específicos para campos menores */
+.ddd {
+    flex: 0 0 80px !important; /* DDD fixo e menor */
+}
+
+.numero {
+    flex: 0 0 100px !important;
+}
+
+/* Estilização dos Labels e Inputs */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Área do Botão e Link */
+.area-botao {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#botao-cadastrar {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+#botao-cadastrar:hover {
+    background-color: #357abd;
+}
+
+.link-login {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.link-login:hover {
+    color: #4a90e2;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 480px) {
+    .area-cadastro {
+        padding: 20px;
+    }
+    
+    .formatacao > div {
+        flex: 0 0 100%;
+    }
+}
