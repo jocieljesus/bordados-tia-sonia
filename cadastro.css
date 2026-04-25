@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     color: var(--cor-terciaria);
+
 }
 
 body{
@@ -11,6 +12,10 @@ body{
     background-repeat: no-repeat;
     background-position: 0% 40%;
     background-size: 100%;
+    font-size: 1.2rem;
+}
+h1{
+    font-size: 3rem;
 }
 
 .area-cadastro{
@@ -96,6 +101,7 @@ input, select{
     font-size:1.1em;
     border: none;
     color: var(--cor-terciaria);
+    border-radius: 10px;
 }
 
 
