@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --cor-principal: #3B929C;
+    --cor-principal: rgb(59, 146, 156);
     --cor-secundaria: #FFFFFF;
     --cor-botao: #E78887;
+    --cor-terciaria: #76492c;
     --largura-principal: 84vw;
     --largura-celular: 100vw;
 }
@@ -327,4 +328,6 @@ hr {
     main{ 
         margin-top: 80px;
     }
+
+
 }

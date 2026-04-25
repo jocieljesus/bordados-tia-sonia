@@ -3,20 +3,28 @@
 *{
     margin: 0;
     padding: 0;
+    color: var(--cor-terciaria);
+}
+
+body{
+    background-image: url(img/logo-tia-sonia.png);
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    background-size: 100%;
 }
 
 .area-cadastro{
-    background-color: var(--cor-principal);
+    background-color: rgba(236, 232, 221, 0.95);
     margin: 50px auto;
-    width: 60vw;
     display: flex;
+    width: 60vw;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 50px;
     box-sizing: border-box;
     border-radius: 20px;
-
+    border-radius: 80px 20px ;
 }
 
 .area-formulario{
@@ -25,20 +33,18 @@
     width: 60vw;
 }
 
-.form-cadastro > div {
+.area-formulario > div {
     display: flex;
-    gap: 30px;
-    width: 50vw;
+    gap: 50px;
 }
 
-.formatacao div{
+div{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
-#ddd, #numero{
-    width: 4vw;
+.area-endereco{
+    display: block;
 }
 
 input, select{
@@ -54,15 +60,87 @@ input, select{
 }
 
 #botao-cadastrar{
-    width: 50%;
-    padding: 10px;
+    padding: 1.2em 5em;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
 }
 
-.link-login{
-    margin-top: -25px;
+.nome-campo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formatacao{
+    display: flex;
+    gap: 20px;
+}
+
+form{
+    width: 40vw;
 }
 
 
+
+.ddd, .numero{
+    flex: 0 0 100px !important;
+    width: 100px !important;
+}
+
+input, select{
+    padding: 20px 10px;
+    font-size:1.1em;
+    border: none;
+    color: var(--cor-terciaria);
+}
+
+
+ select:focus, input:focus{ 
+
+    outline-color: var(--cor-principal);
+ }
+
+ ::placeholder{
+    color: var(--cor-terciaria);
+    opacity: 0.5;
+ }
+
+select option{
+    color: var(--cor-terciaria);
+}
+
+@media (max-width: 430px){
+
+    body{
+        
+         background-image: none;
+         background-color: #f5f3eb;
+    }
+
+    .area-cadastro{
+        width: 100vw;
+        border-radius: 0px;
+        background-color: transparent
+    }
+
+    .area-formulario{
+        width: 100vw;
+    }
+
+    form{
+        width: 90vw;
+    }
+
+    .formatacao{
+        display: block;
+    }
+    .endereco-numero, .area-contato{
+        display: flex;
+    }
+    
+
+}
