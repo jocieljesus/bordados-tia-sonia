@@ -50,7 +50,8 @@ body {
 
 /* Ajustes específicos para campos menores */
 .ddd {
-    flex: 0 0 80px !important; /* DDD fixo e menor */
+    flex: 0 0 40px !important; /* DDD fixo e menor */
+    width: 40px !important;
 }
 
 .numero {
