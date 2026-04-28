@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Cadastro</title>
 </head>
 
 <body>
-     <header>
+    <header>
         <nav class="area-navegacao">
             <img class="logo" src="img/logo-tia-sonia.png" alt="Logo do site" width="150px">
             <ul>
@@ -23,95 +25,103 @@
         </nav>
     </header>
 
-    <main class="area-cadastro">
-        <section class="area-titulo">
-            <h1>Cadastre-se</h1>
-        </section>
-        <section class="area-formulario">
-            <form action="#" class="form-cadastro">
+    <main>
+        <article class="area-cadastro">
+            <section class="area-titulo">
+                <h1>Cadastre-se</h1>
+            </section>
+            <section class="area-formulario">
+                <form action="#" class="form-cadastro">
 
-                <div class="area-nome formatacao">
-                    <div class="primeiro-nome titulo-campo">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" required>
-                    </div>
-                    <div class="ultimo-nome titulo-campo">
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
-                    </div>
-                </div>
-
-                <div class="area-acesso formatacao">
-                    <div class="email titulo-campo">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Digite seu email" required>
-                    </div>
-                    <div class="senha titulo-campo">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" placeholder="●●●●●●●●" required>
-                    </div>
-                </div>
-
-                <div class="area-contato formatacao">
-                    <div class="ddd titulo-campo">
-                        <label for="ddd">ddd</label>
-                        <input type="number" max="99" id="ddd" placeholder="ddd" required>
-                    </div>
-                    <div class="telefone titulo-campo">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" placeholder="Digite seu telefone" required>
-                    </div>
-                </div>
-                <div class="area-endereco">
-                    <div class="endereco-numero formatacao">
-                        <div class="endereco titulo-campo">
-                            <label for="endereco">Endereço</label>
-                            <input type="text" id="endereco" placeholder="Digite seu endereço">
+                    <div class="area-nome formatacao">
+                        <div class="primeiro-nome titulo-campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome" required>
                         </div>
-                        <div class="numero titulo-campo">
-                            <label for="numero">Número</label>
-                            <input type="number" id="numero" placeholder="000">
-                        </div>
-                    </div>
-                    <div class="cidade-cep formatacao">
-                        <div class="cidade titulo-campo">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" id="cidade" placeholder="cidade">
-                        </div>
-                        <div class="cep titulo-campo">
-                            <label for="cep"> Cep </label>
-                            <input type="text" id="cep" placeholder="00000-000">
+                        <div class="ultimo-nome titulo-campo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
                         </div>
                     </div>
 
-                </div>
-                <div class="area-dados formatacao">
-                    <div class="data-nascimento titulo-campo">
-                        <label for="data-nascimento"> Data de Nascimento</label>
-                        <input type="date" id="data-nascimento" required>
+                    <div class="area-acesso formatacao">
+                        <div class="email titulo-campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Digite seu email" required>
+                        </div>
+                        <div class="senha titulo-campo">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" placeholder="●●●●●●●●" required>
+                        </div>
                     </div>
-                    <div class="genero titulo-campo">
-                        <label for="genero">Gênero</label>
-                        <select id="genero" required>
-                            <option value="" disabled selected>Selecione seu gênero</option>
-                            <option value="#">Feminino</option>
-                            <option value="#">Masculino</option>
-                            <option value="#">Outro</option>
-                            <option value="#">Prefiro não responder</option>
-                        </select>
+
+                    <div class="area-contato formatacao">
+                        <div class="ddd titulo-campo">
+                            <label for="ddd">ddd</label>
+                            <input type="number" max="99" id="ddd" placeholder="ddd" required>
+                        </div>
+                        <div class="telefone titulo-campo">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" placeholder="Digite seu telefone" required>
+                        </div>
                     </div>
-                </div>
+                    <div class="area-endereco">
+                        <div class="endereco-numero formatacao">
+                            <div class="endereco titulo-campo">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" id="endereco" placeholder="Digite seu endereço">
+                            </div>
+                            <div class="numero titulo-campo">
+                                <label for="numero">Número</label>
+                                <input type="number" id="numero" placeholder="000">
+                            </div>
+                        </div>
+                        <div class="cidade-cep formatacao">
+                            <div class="cidade titulo-campo">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade" placeholder="cidade">
+                            </div>
+                            <div class="cep titulo-campo">
+                                <label for="cep"> Cep </label>
+                                <input type="text" id="cep" placeholder="00000-000">
+                            </div>
+                        </div>
 
-                <div class="area-botao">
-                    <button type="submit" id="botao-cadastrar"> cadastrar </button>
-                    <a href="#" class="link-login"> Já possui uma conta? Acesse agora !</a>
-                </div>
-            </form>
-        </section>
+                    </div>
+                    <div class="area-dados formatacao">
+                        <div class="data-nascimento titulo-campo">
+                            <label for="data-nascimento"> Data de Nascimento</label>
+                            <input type="date" id="data-nascimento" required>
+                        </div>
+                        <div class="genero titulo-campo">
+                            <label for="genero">Gênero</label>
+                            <select id="genero" required>
+                                <option value="" disabled selected>Selecione seu gênero</option>
+                                <option value="#">Feminino</option>
+                                <option value="#">Masculino</option>
+                                <option value="#">Outro</option>
+                                <option value="#">Prefiro não responder</option>
+                            </select>
+                        </div>
+                    </div>
 
+                    <div class="area-botao">
+                        <button type="submit" id="botao-cadastrar"> cadastrar </button>
+                        <a href="login.html" class="link-login"> Já possui uma conta? Acesse agora !</a>
+                    </div>
+                </form>
+            </section>
+
+        </article>
     </main>
 
-
+    <footer class="rodape">
+        <nav class="nav-rodape">
+            <p>A Tia Sônia agradece sua visita.Ficou alguma dúvida? Entre em contato com ela <a
+                    href="https://w.app/bordados-tia-sonia" target="_blank">por aqui</a></p>
+            <p>Todos os direitos reservados ©</p>
+        </nav>
+    </footer>
 </body>
 
 </html>
