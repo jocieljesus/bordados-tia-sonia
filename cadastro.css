@@ -97,12 +97,15 @@ input, select {
     
     .area-cadastro{
         width: 100vw;
-        margin-top: 8vh;
+        margin-top: 15vh;
         background: none;
         color: var(--cor-principal);
     }
 
     .area-formulario{
+
+        display: flex;
+        justify-content: center;
         width: 100vw;
     }
 

@@ -18,7 +18,7 @@ if (formCadastrar) {
             cidade: document.getElementById("cidade").value,
             cep: document.getElementById("cep").value,
             dataNascimento: document.getElementById("data-nascimento").value,
-            genero: document.getElementById("genero").value
+            genero: document.getElementById("genero").selectedOptions[0].text
         };
 
         localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario));
